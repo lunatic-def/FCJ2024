@@ -26,7 +26,7 @@ pre : " <b> 8. </b> "
 5) RDS database:
 ![rds](/FCJ2024/images/RDS/rds.png)
 - Database storage enryption with KMS key:
-![rds](/static/images/RDS/sec.png)
+![rds](/FCJ2024/images/RDS/sec.png)
 
 ***PHP web service test run***
 - Simple website for testing fucntion input and output from the RDS database

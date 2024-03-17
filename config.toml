@@ -1,6 +1,6 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
-
+BaseURL = "https:///lunatic-def.github.io/FCJ2024/"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -9,7 +9,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
   # Git hub repo link
-  editURL = ""
+  editURL = "https:///lunatic-def.github.io/FCJ2024/"
   description = ""
   author = "journeyoftheaverageguy@gmail.com"
   showVisitedLinks = true

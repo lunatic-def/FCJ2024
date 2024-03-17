@@ -19,7 +19,7 @@ weight : 1
     * Sever-side authentication: AdminInitiateAuth -> AdminRespondToAuthChallenge
 
 **Case 1: User pool authentication flow** 
-![uo](/images/Cognito/up-auth-flow.JPG)
+![uo](/static/images/Cognito/up-auth-flow.JPG)
 1. Your app prompts your user for their username and password.
 2. You include the username and password as parameters in InitiateAuth.
 3. Amazon Cognito returns an SMS_MFA challenge and a session identifier.
@@ -41,15 +41,15 @@ SUMMARY:
     => After Amazon Cognito creates a profile for your federated user, it changes its function and presents itself as the IdP to your app, which is now the SP. Amazon Cognito is a combination OIDC and OAuth 2.0 IdP. It generates access tokens, ID tokens, and refresh tokens.
 
 **Adding social identity providers to a user pool**
-![uo](/images/Cognito/ID1.JPG)
+![uo](/static/images/Cognito/ID1.JPG)
 **Adding SAML providers**
-![uo](/images/Cognito/saml.JPG)
+![uo](/static/images/Cognito/saml.JPG)
 You can choose to have your web and mobile app users sign in through a SAML(Security Assertion Markup Language) identity provider (IdP) like Microsoft Active Directory Federation Services (ADFS), or Shibboleth. You must choose a SAML IdP which supports the SAML 2.0 standard.
 
 With the hosted UI and federation endpoints, Amazon Cognito authenticates local and third-party IdP users and issues JSON web tokens (JWTs). With the tokens that Amazon Cognito issues, you can consolidate multiple identity sources into a universal OpenID Connect (OIDC) standard across all of your apps. Amazon Cognito can process SAML assertions from your third-party providers into that SSO standard. You can create and manage a SAML IdP in the AWS Management Console, through the AWS CLI, or with the Amazon Cognito user pools API. To create your first SAML IdP in the AWS Management Console, see Adding and managing SAML identity providers in a user pool.
 
 **Adding OIDC providers**
-![uo](/images/Cognito/open.JPG)
+![uo](/static/images/Cognito/open.JPG)
 **OIDC is an identity layer on top of OAuth 2.0, which specifies JSON-formatted (JWT) identity tokens that are issued by IdPs to OIDC client apps (relying parties)**
 
 1. When your user signs in to your application using an OIDC IdP, they pass through the following authentication flow.

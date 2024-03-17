@@ -37,4 +37,4 @@ resource "aws_cloudwatch_metric_alarm" "alb_4xx_errors" {
 ## - HTTPCode_Target_4XX_Count
 ## - TargetResponseTime
 ```
-![alarm](/images/Cloudwatch/alarrm.png)
+![alarm](/static/images/Cloudwatch/alarrm.png)

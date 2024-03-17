@@ -42,4 +42,4 @@ resource "aws_cloudwatch_metric_alarm" "app1_asg_cwa_cpu" {
     ]
 }
 ```
-![alarm](/images/Cloudwatch/alarrm.png)
+![alarm](/static/images/Cloudwatch/alarrm.png)

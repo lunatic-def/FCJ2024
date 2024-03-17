@@ -7,7 +7,7 @@ pre : " <b> I. </b> "
 ---
 In this work shop you will learn about creating a secure web service with MySQL database on AWS platform using terraform for automation of IAC (infrastructor as code).
 
-![VPC](/static/images/1.intro/ws1.png)
+![VPC]( /FCJ2024/images/1.intro/ws1.png)
 
 - VPC:
     * 2 nat, 2 azs, 2 public subnets, 4 private subnets

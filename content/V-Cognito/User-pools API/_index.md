@@ -19,7 +19,7 @@ weight : 1
     * Sever-side authentication: AdminInitiateAuth -> AdminRespondToAuthChallenge
 
 **Case 1: User pool authentication flow** 
-![uo](/FCJ2024/images/Cognito/up-auth-flow.JPG)
+![uo](/FCJ2024/images/Cognito/up-auth-flow.png)
 1. Your app prompts your user for their username and password.
 2. You include the username and password as parameters in InitiateAuth.
 3. Amazon Cognito returns an SMS_MFA challenge and a session identifier.

@@ -33,8 +33,8 @@ weight : 2
 ![up](/FCJ2024/images/Cognito/tercl3.png)
 
 **After success sign in you will be redict to "aws.training" page**
-![up](/FCJ2024/images/Cognito/url_callback.jpg)
+![up](/FCJ2024/images/Cognito/url_callback.png)
 
 ### OpenID config
     https://cognito-idp.{region}.amazonaws.com/{userpoolid}/.well-known/openid-configuration
-![up](/FCJ2024/images/Cognito/openidconfig.jpg)
+![up](/FCJ2024/images/Cognito/openidconfig.png)

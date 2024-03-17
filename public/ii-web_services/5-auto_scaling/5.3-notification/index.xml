@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create Auto Scaling Notification resource on AWS System Manager</title>
-    <link>//localhost:1313/ii-web_services/5-auto_scaling/5.3-notification/</link>
+    <link>http://localhost:1313/FCJ2024/ii-web_services/5-auto_scaling/5.3-notification/</link>
     <description>Recent content in Create Auto Scaling Notification resource on AWS System Manager</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/ii-web_services/5-auto_scaling/5.3-notification/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/FCJ2024/ii-web_services/5-auto_scaling/5.3-notification/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

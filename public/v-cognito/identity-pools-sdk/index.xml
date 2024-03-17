@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Identity-pools SDK on AWS System Manager</title>
-    <link>//localhost:1313/v-cognito/identity-pools-sdk/</link>
+    <link>http://localhost:1313/FCJ2024/v-cognito/identity-pools-sdk/</link>
     <description>Recent content in Identity-pools SDK on AWS System Manager</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/v-cognito/identity-pools-sdk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/FCJ2024/v-cognito/identity-pools-sdk/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

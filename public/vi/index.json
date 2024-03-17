@@ -1,69 +1,69 @@
 [
 {
-	"uri": "//localhost:1313/vi/ii-web_services/8-results/",
+	"uri": "http://localhost:1313/FCJ2024/vi/ii-web_services/8-results/",
 	"title": "Session Management",
 	"tags": [],
 	"description": "",
 	"content": "Làm việc với Amazon System Manager - Session Manager Tổng quan Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon System Manager - Session Management. Thực hành tạo kết nối đến máy chủ public và máy chủ private trong VPC.\nNội dung Giới thiệu Các bước chuẩn bị Tạo kết nối đến máy chủ EC2 Quản lý session logs Port Forwarding Dọn dẹp tài nguyên "
 },
 {
-	"uri": "//localhost:1313/vi/ii-web_services/2-prerequiste/",
+	"uri": "http://localhost:1313/FCJ2024/vi/ii-web_services/2-prerequiste/",
 	"title": "Các bước chuẩn bị",
 	"tags": [],
 	"description": "",
 	"content": "\rBạn cần tạo sẵn 1 Linux instance thuộc public subnet và 1 Window instance thuộc private subnet để thực hiện bài thực hành này.\nĐể tìm hiểu cách tạo các EC2 instance và VPC với public/private subnet các bạn có thể tham khảo bài lab :\nGiới thiệu về Amazon EC2 Làm việc với Amazon VPC Để sử dụng System Manager để quản lý window instance nói riêng và các instance nói chung của chúng ta trên AWS, ta cần phải cung cấp quyền cho các instance của chúng ta có thể làm việc với System Manager.Trong phần chuẩn bị này, chúng ta cũng sẽ tiến hành tạo IAM Role để cấp quyền cho các instance có thể làm việc với System Manager.\nNội dung Chuẩn bị VPC và EC2 Instance Tạo IAM Role "
 },
 {
-	"uri": "//localhost:1313/vi/ii-web_services/3-route53-and-acm/",
+	"uri": "http://localhost:1313/FCJ2024/vi/ii-web_services/3-route53-and-acm/",
 	"title": "Tạo kết nối đến máy chủ EC2",
 	"tags": [],
 	"description": "",
 	"content": "Trong bước này, chúng ta sẽ thực hiện tạo kết nối đến các máy chủ EC2 của chúng ta, nằm trong cả public và private subnet.\nNội dung 3.1. Tạo Kết nối đến máy chủ EC2 Public 3.2. Tạo Kết nối đến máy chủ EC2 Private\n"
 },
 {
-	"uri": "//localhost:1313/vi/ii-web_services/4-alb/",
+	"uri": "http://localhost:1313/FCJ2024/vi/ii-web_services/4-alb/",
 	"title": "Tạo kết nối đến máy chủ EC2",
 	"tags": [],
 	"description": "",
 	"content": "Trong bước này, chúng ta sẽ thực hiện tạo kết nối đến các máy chủ EC2 của chúng ta, nằm trong cả public và private subnet.\nNội dung 3.1. Tạo Kết nối đến máy chủ EC2 Public 3.2. Tạo Kết nối đến máy chủ EC2 Private\n"
 },
 {
-	"uri": "//localhost:1313/vi/ii-web_services/5-auto_scaling/",
+	"uri": "http://localhost:1313/FCJ2024/vi/ii-web_services/5-auto_scaling/",
 	"title": "Quản lý session logs",
 	"tags": [],
 	"description": "",
 	"content": "Với Session Manager chúng ta có thể xem được lịch sử các kết nối tới các instance thông qua Session history. Tuy nhiên chúng ta chưa xem được chi tiết các câu lệnh được sử dụng.\nTrong phần này chúng ta sẽ tiến hành tạo S3 bucket và thực hiện cấu hình lưu trữ các session logs để xem được chi tiết các câu lệnh được sử dụng trong session.\nNội dung: Cập nhật IAM Role Tạo S3 Bucket Tạo S3 Gateway endpoint Cấu hình Session logs "
 },
 {
-	"uri": "//localhost:1313/vi/",
+	"uri": "http://localhost:1313/FCJ2024/vi/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/vi/i-introduce/",
+	"uri": "http://localhost:1313/FCJ2024/vi/i-introduce/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/vi/ii-web_services/",
+	"uri": "http://localhost:1313/FCJ2024/vi/ii-web_services/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/vi/categories/",
+	"uri": "http://localhost:1313/FCJ2024/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/vi/tags/",
+	"uri": "http://localhost:1313/FCJ2024/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

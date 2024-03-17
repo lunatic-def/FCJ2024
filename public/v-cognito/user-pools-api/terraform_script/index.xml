@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Case 1 demo on AWS System Manager</title>
-    <link>//localhost:1313/v-cognito/user-pools-api/terraform_script/</link>
+    <link>http://localhost:1313/FCJ2024/v-cognito/user-pools-api/terraform_script/</link>
     <description>Recent content in Case 1 demo on AWS System Manager</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/v-cognito/user-pools-api/terraform_script/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/FCJ2024/v-cognito/user-pools-api/terraform_script/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

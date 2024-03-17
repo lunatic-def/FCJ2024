@@ -58,8 +58,8 @@ resource "aws_iam_role" "cw_canary_iam_role" {
 }
 ```
 - Canary role creation and policy
-![cw](/static/images/Cloudwatch/canary_role.png)
-![cw](/static/images/Cloudwatch/cw-policy.png)
+![cw](/FCJ2024/images/Cloudwatch/canary_role.png)
+![cw](/FCJ2024/images/Cloudwatch/cw-policy.png)
 ***AWS CloudWatch Canary***
 ```
 resource "aws_synthetics_canary" "sswebsite2" {
@@ -82,14 +82,14 @@ resource "aws_synthetics_canary" "sswebsite2" {
   }
 }
 ```
-![cw](/static/images/Cloudwatch/canary1.png)
+![cw](/FCJ2024/images/Cloudwatch/canary1.png)
 ![cw](/static/images/Cloudwatch/canary2.png)
 - canary log 
-![cw](/static/images/Cloudwatch/canarylog.png)
+![cw](/FCJ2024/images/Cloudwatch/canarylog.png)
 - canary screenshot of web page
-![cw](/static/images/Cloudwatch/canaryscreenshot.png)
+![cw](/FCJ2024/images/Cloudwatch/canaryscreenshot.png)
 - canary S3 log storage blocking public access
-![cw](/static/images/Cloudwatch/canarys3.png)
-![cw](/static/images/Cloudwatch/s3.png)
+![cw](/FCJ2024/images/Cloudwatch/canarys3.png)
+![cw](/FCJ2024/images/Cloudwatch/s3.png)
 - "sswebsite2" for cloudwatch canary UI.
-![cw](/static/images/Cloudwatch/s3-2.png)
+![cw](/FCJ2024/images/Cloudwatch/s3-2.png)

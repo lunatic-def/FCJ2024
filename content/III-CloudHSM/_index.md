@@ -40,7 +40,7 @@ In process -> Encrypt and decrypt data with multiple cryptographic SDKs.
 
 ***2. Create HSM user***
 - Create "hsmuser" to manage HSM cluster with HSM full privilege and AWS CLI control privilege for testing purpose
-![hsm](/static/images/CloudHSM/hsmuser.png)
+![hsm](/FCJ2024/images/CloudHSM/hsmuser.png)
 
 ***3. Initialize HSM cluster***
 - To initialize the cluster, you must first create an HSM in the cluster
@@ -67,7 +67,7 @@ aws cloudhsmv2 describe-clusters \
 --filters clusterIds=$HSM_CLUSTER_ID \
 --output text --query 'Clusters[].Certificates.ClusterCsr' > myClusterCsr.csr
 ```
-![hsm](/static/images/CloudHSM/1.png)
+![hsm](/FCJ2024/images/CloudHSM/1.png)
 ***5. Create key, certificate & sign the CSR***
 - Create a private key locally
 - From the created Pri key, create a CA certificate
@@ -75,18 +75,18 @@ aws cloudhsmv2 describe-clusters \
 openssl genrsa -aes256 -out CAPriKey.key 2024 
 openssl req -new -x509 -days 365 -key CAPriKey.key -out customerCA.crt
 ```
-![hsm](/static/images/CloudHSM/2.png)
+![hsm](/FCJ2024/images/CloudHSM/2.png)
 - Sign the CSR. Input is the downloaded HSM cluster CSR
 ```
 openssl x509 -req -days 365 -in myClusterCsr.csr -CA customerCA.crt -CAkey CAPriKey.key -CAcreateserial -out CustomerHsmCert.crt 
 ```
-![hsm](/static/images/CloudHSM/4.png)
+![hsm](/FCJ2024/images/CloudHSM/4.png)
 ***6. Upload certificates to cluster***
 ```
 aws cloudhsmv2 initialize-cluster --cluster-id $HSM_CLUSTER_ID --signed-cert file://CustomerHsmCert.crt --trust-anchor file://customerCA.crt
 ```
-![hsm](/static/images/CloudHSM/5.png)
-![hsm](/static/images/CloudHSM/6.png)
+![hsm](/FCJ2024/images/CloudHSM/5.png)
+![hsm](/FCJ2024/images/CloudHSM/6.png)
 
 ***7. Active the HSM cluster***
 - Download and install HSM client
@@ -95,29 +95,29 @@ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/EL6/cloudhsm-cl
 
 sudo yum install ./cloudhsm-client-latest.el6.x86_64.rpm
 ```
-![hsm](/static/images/CloudHSM/7.png)
-![hsm](/static/images/CloudHSM/8.png)
+![hsm](/FCJ2024/images/CloudHSM/7.png)
+![hsm](/FCJ2024/images/CloudHSM/8.png)
 - Edit client configuration by updating the HSM's IP address
 ```
 sudo cp customerCA.crt /opt/cloudhsm/etc/customerCA.crt
 sudo /opt/cloudhsm/bin/configure -a HSM_IP
 ```
-![hsm](/static/images/CloudHSM/9.png)
+![hsm](/FCJ2024/images/CloudHSM/9.png)
 
 ***8. Login to the HSM cluster***
 - Configure cloudhsm security group inbound and outbounf allow ec2 bastion/cluster from port 2225
-![hsm](/static/images/CloudHSM/sec1.png)
-![hsm](/static/images/CloudHSM/sec2.png)
+![hsm](/FCJ2024/images/CloudHSM/sec1.png)
+![hsm](/FCJ2024/images/CloudHSM/sec2.png)
 - Start the CloudHSM Mgmt Utility (CMU) CLI
 ```
 /opt/cloudhsm/bin/cloudhsm_mgmt_util /opt/cloudhsm/etc/cloudhsm_mgmt_util.cfg
 ```
-![hsm](/static/images/CloudHSM/sec3.png)
+![hsm](/FCJ2024/images/CloudHSM/sec3.png)
 -  Login into HSM with PRECO user and change password
 ```
 loginHSM PRECO admin password
 listUsers
 ```
-![hsm](/static/images/CloudHSM/sec4.png)
+![hsm](/FCJ2024/images/CloudHSM/sec4.png)
 - Change password -> now admin type changed from PRECO to CO
-![hsm](/static/images/CloudHSM/sec5.png)
+![hsm](/FCJ2024/images/CloudHSM/sec5.png)
